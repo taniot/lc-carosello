@@ -1,0 +1,65 @@
+/*
+RESET
+*/
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* 
+COMMON
+*/
+
+body {
+    background-color: pink;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 700px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+}
+
+.prev, .next {
+    position: absolute;
+    background-color: aquamarine;
+    top:50%;
+    transform: translate(0, -50%);
+    z-index:10;
+    cursor: pointer;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.item {
+    height: 100%;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
